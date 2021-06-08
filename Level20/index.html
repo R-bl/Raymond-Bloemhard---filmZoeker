@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Zoeker</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script defer type="text/javascript" src="./Js/movies.js"></script>
+    <script defer type="text/javascript" src="./Js/filmzoeker.js"></script>
+    <script
+      src="https://kit.fontawesome.com/45b346d266.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="radio-item">
+          <input
+              type="radio"
+              id="all-movies"
+              name="movie-filter"
+              value="all-movies"
+              checked>
+          
+              <label for="all-movies" />All Movies</label
+              >
+        </div>
+        <div class="radio-item">
+          <input
+              type="radio"
+              id="newest-movies"
+              name="movie-filter"
+              value="new-movies"
+              checked
+            /><label for="newest-movies"
+            >Laatste films, 2014 of nieuwer</label
+          >
+        </div>
+        <div class="radio-item">
+          <input
+              type="radio"
+              id="avenger-movies"
+              name="movie-filter"
+              value="avenger-movies"
+            /><label for="avenger-movies"
+            >Avenger</label
+          >
+        </div>
+        <div class="radio-item">
+          <input
+              type="radio"
+              id="xmen-movies"
+              name="movie-filter"
+              value="xmen-movies"
+            /><label for="xmen-movies"
+            >X-Men</label
+          >
+        </div>
+        <div class="radio-item">
+          <input
+              type="radio"
+              id="princess-movies"
+              name="movie-filter"
+              value="princess-movies"
+            /><label for="princess-movies"
+            >Princess</label
+          >
+        </div>
+        <div class="radio-item">
+          <input
+              type="radio"
+              id="batman-movies"
+              name="movie-filter"
+              value="batman-movies"
+            /><label for="batman-movies"
+            >Batman</label
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="searchContainer">
+        <input
+          type="search"
+          class="searchTerm"
+          placeholder="Search for movies"
+          id="search-movie"
+          name="search"
+        />
+        <button
+          type="submit"
+          name="search"
+          id="searchButton"
+          onclick="searchFunction()"
+        >
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="movie-container">
+      <ul id="movieList"></ul>
+    </div>
+  </body>
+</html>
